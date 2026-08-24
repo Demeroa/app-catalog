@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-08-23T00:00:00Z",
+  "apps": [
+    {
+      "id": "tarot",
+      "enabled": false,
+      "priority": 10,
+      "iosUrl": "https://apps.apple.com/app/id0000000000",
+      "iconUrl": "https://demeroa.github.io/app-catalog/images/tarot.png",
+      "excludeStorefronts": [
+        "CN"
+      ],
+      "locales": {
+        "ko": {
+          "name": "별의 눈물",
+          "tagline": "오늘의 흐름을 읽는 작은 타로",
+          "cta": "App Store에서 보기"
+        },
+        "en": {
+          "name": "Tears of Stars",
+          "tagline": "A quiet tarot reading for today",
+          "cta": "View on the App Store"
+        }
+      }
+    },
+    {
+      "id": "happy-panda",
+      "enabled": false,
+      "priority": 5,
+      "iosUrl": "https://apps.apple.com/app/id0000000001",
+      "iconUrl": "https://demeroa.github.io/app-catalog/images/panda.png",
+      "locales": {
+        "ko": {
+          "name": "Happy Panda",
+          "tagline": "가볍게 즐기는 판다",
+          "cta": "App Store에서 보기"
+        },
+        "en": {
+          "name": "Happy Panda",
+          "tagline": "A light little panda",
+          "cta": "View on the App Store"
+        },
+        "zh-Hans": {
+          "name": "Happy Panda",
+          "tagline": "轻松的小熊猫",
+          "cta": "在 App Store 查看"
+        }
+      }
+    }
+  ]
+}
