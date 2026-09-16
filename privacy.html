@@ -27,88 +27,72 @@
 </head>
 <body>
 <h1>Little Edit — Privacy Policy</h1>
-<p class="updated">Last updated: 2 September 2026</p>
+<p class="updated">Last updated: 16 September 2026</p>
 
-<p>Little Edit is a photo editor that runs entirely on your device. It has no
-accounts, no analytics, and no advertising.</p>
+<p>Little Edit is a photo editor that does its work on your device. It has no accounts and no advertising. The developer receives no photos, no face data and no usage statistics. On Android, the Google component that finds faces collects technical data of its own; that is described under <strong>Network and third-party services</strong>.</p>
 
 <h2>Photos</h2>
 <p>Your photos never leave your device.</p>
-<p>Everything the app does to a photo — effects, stickers, text, the date stamp and
-blemish retouching — happens in the app on your phone. Nothing is uploaded, and
-there is no server that could receive it. Face detection for blemish retouching
-uses Apple's on-device Vision framework; it measures where a face is in order to
-know where to look for blemishes, and produces no data that leaves the device.</p>
-<p>Edited copies are written to your photo library only when you tap Save, and only
-as new files. Your originals are not modified or deleted.</p>
+<p>Everything the app does to a photo — effects, stickers, text, the date stamp, blemish retouching and reshaping — happens in the app on your phone. Nothing is uploaded to the developer, and there is no server that could receive it. Face detection uses Apple's Vision framework on iOS and Google's ML Kit Face Detection on Android. Both run on the device, and neither sends your photo or your face coordinates anywhere.</p>
+<p>Edited copies are written to your photo library only when you tap Save, and only as new files. Your originals are not modified or deleted.</p>
+<p>When you tap Share, the app hands the edited image to whichever app or service you pick. What happens to it after that is covered by that service's privacy practices, not by this policy.</p>
 
 <h2>Face Data and On-Device Retouching</h2>
-<p>Little Edit uses face data only when you choose a photo and tap the blemish
-retouch control. The app temporarily processes the pixels of that photo and uses
-Apple's on-device Vision framework to produce a face bounding box and coordinate
-points for the face outline, eyes, eyebrows, outer lips and nose. The app also
-creates temporary coordinates and masks for possible blemishes.</p>
-<p>On iOS, before face analysis runs for the first time, Little Edit explains this
-use and asks for your consent. You can withdraw consent at any time in the app's
-Settings by turning off <strong>Allow on-device face analysis</strong>. After
-withdrawal, no further face analysis takes place unless you consent again. Only
-your consent choice is stored on the device; it is not Face Data.</p>
-<p>This information is used only to locate the skin area, avoid retouching facial
-features such as the eyes and lips, show possible blemishes for you to select, and
-apply the retouching you request. Little Edit does not use face data to identify
-or authenticate anyone, create a face template or profile, infer identity,
-demographics, emotion or health, train a model, or for analytics, advertising or
-marketing.</p>
-<p>All face-data processing takes place on your device. Face coordinates,
-landmarks, blemish coordinates and masks are held only in the app's temporary
-memory for the active editing session. They are not written to persistent
-storage, uploaded, transmitted, shared, sold or disclosed to the developer or
-any third party. They are discarded when the retouch is applied, when you leave
-the editor or open another photo, or when the app terminates. The app has no
-server that receives face data.</p>
-<p>Separately, to make the Recent Photos feature work, the app keeps local copies
-of up to seven recently opened photos and small thumbnails inside the app's
-private storage on your device. The oldest local copy is deleted automatically
-when an eighth photo is added. These local files never leave the device and all
-remaining copies are deleted when you delete the app.</p>
+<p>Little Edit uses face data when you use blemish retouching, or the automatic part of reshaping. Manual reshaping — pushing part of the photo with your finger — uses no face detection at all.</p>
+<p>The app temporarily processes the pixels of the photo you opened and produces a face bounding box and coordinate points for the face outline, eyes, eyebrows, outer lips and nose. It also creates temporary coordinates and masks for possible blemishes.</p>
+<p>That information is used only to:</p>
+<ul>
+<li>find the skin area, and avoid retouching features such as the eyes and lips</li>
+<li>show possible blemishes for you to pick from, and remove the ones you choose</li>
+<li>adjust the jawline, the overall size of the face, and the size of the eyes, when you move those controls</li>
+</ul>
+<p>Little Edit does not use face data to identify or authenticate anyone, create a face template or profile, infer identity, demographics, emotion or health, train a model, or for analytics, advertising or marketing.</p>
+<p>All of this processing takes place on your device. Face coordinates, landmarks, blemish coordinates and masks are held only in the app's memory. They are never written to storage, uploaded, transmitted, shared, sold or disclosed to the developer or to anyone else. They are dropped when you open another photo, and they are gone when the app closes. The app has no server that could receive them.</p>
+<h3>Asking first, on iOS</h3>
+<p>On iOS, before face analysis runs for the first time, Little Edit explains this use and asks for your consent. You can withdraw it at any time in the app's Settings by turning off <strong>Allow on-device face analysis</strong>. After withdrawal no further face analysis takes place unless you consent again. Only your choice is stored, and that choice is not face data.</p>
+<p><strong>This setting exists on iOS only.</strong> The Android build uses the on-device ML Kit face detector and does not show the same consent switch.</p>
+
+<h2>Recent photos</h2>
+<p>To make the Recent Photos feature work, the app keeps local copies of up to seven recently opened photos, and small thumbnails, inside the app's private storage. The oldest copy is deleted automatically when an eighth photo is added. These files never go to the developer, and they are deleted when you delete the app.</p>
 
 <h2>What the app accesses, and why</h2>
 <ul>
-  <li><strong>Photo library</strong> — to open the photo you choose, and to save an
-  edited copy. The app reads only the photo you pick.</li>
-  <li><strong>Camera</strong> — only if you take a photo from inside the app.</li>
+<li><strong>Photo library</strong> — to open the photo you choose, and to save an edited copy. The app reads only the photo you pick.</li>
+<li><strong>Camera</strong> — only if you take a photo from inside the app.</li>
 </ul>
-<p>You can withdraw either permission at any time in iOS Settings. The app keeps
-working with whatever you allow.</p>
+<p>You can withdraw either permission at any time in your device's iOS or Android settings. The app keeps working with whatever you allow.</p>
 
-<h2>The one network request</h2>
-<p>The settings screen shows a short list of the developer's other apps. To do that
-the app downloads a small file of names, icons and store links from
-<code>demeroa.github.io</code>, at most once a day, and caches it.</p>
-<p>That request contains nothing about you or your photos. As with any web request,
-the server that answers it can see your IP address and the time of the request.
-GitHub hosts that file; their privacy practices are their own.</p>
-<p>If the request fails the section simply does not appear.</p>
+<h2>Network and third-party services</h2>
+<p><strong>The developer's app list.</strong> The settings screen shows a short list of the developer's other apps. To do that the app downloads a small file of names, icons and store links from <code>demeroa.github.io</code>, at most once a day, and caches it. That request contains nothing about you or your photos. As with any web request, the server that answers it can see your IP address and the time of the request. GitHub hosts the file; their privacy practices are their own. If the request fails, the section simply does not appear.</p>
+<p><strong>Google ML Kit — Android only.</strong> The Android build uses Google's ML Kit Face Detection to find faces on the device. Google documents that the ML Kit SDK collects technical data of its own: device and application information, per-installation identifiers, and diagnostic and usage metrics, encrypted in transit with HTTPS. This is Google's collection, not the developer's, and it is separate from your photos and your face coordinates, which stay on the device. Google's disclosure is at <a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a>.</p>
+<p><strong>The stores.</strong> Purchases go through Apple on iOS and Google Play on Android, as described below.</p>
+<p>Beyond these, the app uses no analytics, advertising, crash-reporting or attribution service.</p>
 
 <h2>Purchases</h2>
-<p>Purchases — the premium unlock, the sticker pack, and tips for the developer —
-are handled entirely by Apple. The app is told what you own so it can unlock the
-right things. It never sees your payment details, and it does not record who
-tipped or how much.</p>
+<p>Purchases are handled by Apple on iOS and by Google Play on Android. The app is told what you own, so it can unlock the right things. It never sees your payment details. Tips for the developer are available on iOS only, and the app does not record who tipped or how much.</p>
 
 <h2>What is stored on your device</h2>
-<p>Your language choice, whether sounds are on, your saved-photo quality setting,
-your face-analysis consent choice, your favourite looks, up to seven recently
-opened photos and which purchases you own. All of it stays on the device and is
-removed when you delete the app.</p>
+<ul>
+<li>your language choice</li>
+<li>whether sounds are on</li>
+<li>your saved-photo quality setting</li>
+<li>your favourite looks</li>
+<li>your face-analysis consent choice (iOS)</li>
+<li>up to seven recently opened photos</li>
+<li>which purchases you own</li>
+<li>identifiers for the edits that have used the free allowance for saving a retouched or reshaped photo, so that saving the same edit twice is not counted twice</li>
+</ul>
+<p>All of it stays on the device and is removed when you delete the app.</p>
+<p>One exception is worth naming. On Android the app allows the system backup, so these settings files — including the list of edit identifiers above — can be copied into your own Google Drive backup and restored onto a new phone. That is Android backing up your own data under your Google account. None of it goes to the developer.</p>
 
 <h2>Children</h2>
-<p>The app does not collect personal information from anyone, including children.</p>
+<p>The app has no accounts and asks for no personal information from anyone, including children. On Android, the technical data collected by Google's ML Kit, described above, applies to everyone who uses the app.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, the date at the top changes with it.</p>
 
 <h2>Contact</h2>
 <p><a href="mailto:arizelsoft@gmail.com">arizelsoft@gmail.com</a></p>
+
 </body>
 </html>
